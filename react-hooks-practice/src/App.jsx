@@ -1,10 +1,10 @@
-import Counter from "./exercise/useState/Counter"
+import ToDoList from "./exercise/useState/ToDoList"
+import ToggleText from "./exercise/useState/ToggleText";
 function App() {
 
   return (
     <>
-    <div className="text-xl bg-green-500 flex justify-center">CounterApp</div>
-    <Counter />
+      <ToggleText />
     </>
   )
 }
