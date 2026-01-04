@@ -2,7 +2,7 @@ import { useState } from "react";
 export default function Counter(){
     const [count, setCount]=useState(0);
 
-    const handleIncrease=()=>setCount((prev)=>prev+1);
+    const handleIncrease=()=>setCount((prev)=>prev === 50 ? prev : prev + 1);
     const handleDecrease=()=>setCount((prev)=>(prev > 0 ? prev-1 : 0));
     const handleReset=()=>setCount(0);
 
