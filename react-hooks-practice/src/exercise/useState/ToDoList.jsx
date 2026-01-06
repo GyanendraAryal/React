@@ -16,7 +16,7 @@ export default function ToDoList() {
         type="text" />
         <button
         onClick={()=>{
-            setToDos([...setToDos, todo]);
+            setToDos([...todos, todo]);
             setTodo("")
         }}
     >
