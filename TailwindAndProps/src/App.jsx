@@ -12,7 +12,7 @@ function App() {
     <>
       <Props />
       <div className='w-full h-full flex flex gap-4 items-center justify-center'>
-        <Card creator="Ich heise gyanendra" value={myDetail} field="learning" />
+        <Card creator="Ich heise gyanendra" value = {myDetail} field="learning" />
         <Card />
       </div>
     </>

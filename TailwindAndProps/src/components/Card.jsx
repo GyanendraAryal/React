@@ -1,5 +1,5 @@
-export default function Card(props) {
-  const detail = props.value
+export default function Card({creator, value, field}) {
+  
   return (
     <div className="w-60 my-10 flex flex-col text-white rounded-xl bg-black min-h-[19rem] ">
       <div>
@@ -11,11 +11,11 @@ export default function Card(props) {
       </div>
       <div className="flex flex-col py-3 px-3 pb-10">
         <div className="flex justify-between ">
-          <h1 className="font-bold ">{props.creator}</h1>
-          <h1>{props.field}</h1>
+          <h1 className="font-bold ">{creator}</h1>
+          <h1>{field}</h1>
         </div>
         <div className="flex  justify-between">
-          <p> {detail.name} </p>
+          <p> {value?.name} </p>
           <p>0.01</p>
         </div>
       </div>
