@@ -1,14 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-    App
+    <h1 className='text-2xl text-green-500 h-10 w-max-3/2 bg-blue-300 ' >Hello Learning ReactRedux from CODE HELP</h1>
     </>
   )
 }
