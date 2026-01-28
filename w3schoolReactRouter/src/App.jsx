@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {BrowserRouter, Routes, Route, Link, Outlet} from 'react-router-dom';
+import {BrowserRouter, Routes, Route, Link, NavLink} from 'react-router-dom';
 import { Home } from './components/Home';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
@@ -14,10 +14,14 @@ function App() {
     <BrowserRouter>
     
     <nav className='flex gap-5 justify-center h-10 text-2xl items-center'>
-      <Link to='/' >Home</Link>
-      <Link to='/about' >About</Link>
-      <Link to='/contact' >Contact</Link>
-      <Link to='/products' >Products</Link>
+      <NavLink to='/' className={({isActive})=> isActive ? 
+      "text-2xl text-green-400 bg-slate-500": "text-yellow-400 hover:text-green-300"} >Home</NavLink>
+      <NavLink to='/about' className={({isActive})=> isActive ? 
+      "text-2xl text-green-400 bg-slate-500": "text-yellow-400 hover:text-green-300"} >About</NavLink>
+      <NavLink to='/contact' className={({isActive})=> isActive ? 
+      "text-2xl text-green-400 bg-slate-500": "text-yellow-400 hover:text-green-300"} >Contact</NavLink>
+      <NavLink to='/products' className={({isActive})=> isActive ? 
+      "text-2xl text-green-400 bg-slate-500": "text-yellow-400 hover:text-green-300"} >Products</NavLink>
     </nav>
 
     <Routes>
