@@ -8,10 +8,13 @@ function App() {
 
   return (
     <>
-      <button
-        onClick={() => setCount(count + 1)}
+     <div className='flex gap-4 bg-black text-white text-6xl items-center min-h-50'>
+       <button
+      className=' border-2 border-red-500 cursor-pointer'
+      onClick={() => setCount(count + 1)}
       >Count</button>
-      <span>Home Count{count}</span>
+      <span>Home {count}</span>
+     </div>
     </>
   )
 }
