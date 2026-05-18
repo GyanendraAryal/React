@@ -2,8 +2,7 @@ import { useContext } from "react";
 import ThemeContext from "./context/themeContext";
 
 function App() {
-  const { darkMode, toggleTheme } =
-    useContext(ThemeContext);
+  const { darkMode, toggleTheme } = useContext(ThemeContext);
 
   return (
     <div
